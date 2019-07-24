@@ -416,7 +416,7 @@ bpress(XEvent *e)
 		mousereport(e);
 		return;
 	}
-
+    /*
 	for (ms = mshortcuts; ms < mshortcuts + LEN(mshortcuts); ms++) {
 		if (e->xbutton.button == ms->b
 				&& match(ms->mask, e->xbutton.state)) {
@@ -424,7 +424,7 @@ bpress(XEvent *e)
 			return;
 		}
 	}
-
+    */
 	for (mk = mkeys; mk < mkeys + LEN(mkeys); mk++) {
 		if (e->xbutton.button == mk->b
 				&& match(mk->mask, e->xbutton.state)) {
