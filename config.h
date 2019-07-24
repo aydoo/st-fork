@@ -164,8 +164,8 @@ static MouseShortcut mshortcuts[] = {
 
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              ControlMask,      kscrollup,      {.i =  5} },
-	{ Button5,              ControlMask,      kscrolldown,    {.i =  5} },
+	{ Button4,              XK_NO_MOD,      kscrollup,      {.i =  5} },
+	{ Button5,              XK_NO_MOD,      kscrolldown,    {.i =  5} },
 };
 
 /* Internal keyboard shortcuts. */
@@ -184,8 +184,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
-	{ ControlMask,          XK_Up,          kscrollup,      {.i = -1} },
-	{ ControlMask,          XK_Down,        kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_K,           kscrollup,      {.i = -1} },
+	{ TERMMOD,              XK_J,           kscrolldown,    {.i = -1} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 };
